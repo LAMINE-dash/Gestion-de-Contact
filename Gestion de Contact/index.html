@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestion de Contact</title>
+</head>
+<body>
+
+
+
+
+    <!--    <div class="container">
+        <div class="title-content">
+            <h1>Gestion de contact <span class="count">0</span></h1>
+            <button id="addContactModalButton" type="button">Ajouter contact</button>
+        </div>
+
+        <div class="modal" id="contactModal">
+            <div class="modal-content">
+            <span class="close">X</span>
+            <div class="form">
+                <form action="">
+                    <label for="name">Nom Complet</label>
+                    <input class="form-input" type="text" placeholder="Nom" id="name">
+
+                   <label for="email">Email</label>
+                    <input class="form-input" type="email" placeholder="Email" id="email" required>
+
+
+                    <label for="phone">Téléphone</label>
+                    <input class="form-input" type="number" placeholder="Téléphone" id="phone" required>
+
+                    <button type="submit" class="addContact">Ajouter</button>
+                </form>
+            </div>
+          </div>
+        </div>
+
+     
+
+
+
+        <div class="contact">
+            <table class="table">
+               <thead>
+                 <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Actions</th>
+                </tr>
+               </thead>
+         <tbody>
+                <tr>
+                    <td>Lamine</td>
+                    <td>Dioplamine219@gmail.com</td>
+                    <td>768058139</td>
+                    <td>
+                    <button class="deleteButton">Supprimer</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lamine</td>
+                    <td>Dioplamine219@gmail.com</td>
+                    <td>768058139</td>
+                    <td>
+                    <button class="deleteButton">Supprimer</button>
+                    </td>
+                </tr>
+               </tbody>   
+            </table>
+        </div>
+    </div>-->  
+
+
+
+
+  <div class="container">
+    <div class="title-content">
+      <h2>Gestion de contacte : <span class="count"></span></h2>
+
+      <!-- Trigger/Open The Modal -->
+      <button id="addContactModalButton">Ajouer contact</button>
+
+      <!-- The Modal -->
+      <div id="contactModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="form-container">
+            <form method="post">
+              <label for="name">Nom complet:</label>
+              <input class="form-control" required type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input class="form-control" required type="email" id="email" name="email">
+              <label for="telephone">Telephone:</label>
+              <input class="form-control" required type="number" id="telephone" name="telephone">
+              <button type="submit" class="addContactButton">Ajouter </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="table-container">
+          <table class="table">
+            <tr>
+              <th>Nom complet</th>
+              <th>Email</th>
+              <th>Telephone</th>
+              <th>Actions</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
